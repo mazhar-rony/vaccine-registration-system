@@ -29,7 +29,7 @@ This is a Laravel project that demonstrates a vaccine registration system where 
 
 Follow the steps below to set up your environment.
 
-    ```bash
+    
     git clone https://github.com/mazhar-rony/vaccine-registration-system.git
     cd vaccine-registration-system
     composer install
@@ -38,13 +38,13 @@ Follow the steps below to set up your environment.
     php artisan migrate:fresh --seed
     npm install
     npm run dev
-    ```
+    
 
 ## Mail Configuration
 
-To configure your mail settings, update the following values in your .env file:
+To configure your mail settings, update the following values in your `.env` file:
 
-    ```bash
+    
     MAIL_MAILER=smtp
     MAIL_HOST=smtp.mailtrap.io
     MAIL_PORT=2525
@@ -53,29 +53,29 @@ To configure your mail settings, update the following values in your .env file:
     MAIL_ENCRYPTION=tls
     MAIL_FROM_ADDRESS=noreply@example.com
     MAIL_FROM_NAME="${APP_NAME}"
-    ```
+    
 
 ## Queue Configuration
 
-Update your .env file:
+Update your `.env` file:
 
-    ```bash
+    
     QUEUE_CONNECTION=database
-    ```
+    
 
 ### Running the Queue Worker
 
-    ```bash
+    
     php artisan queue:work
-    ```
+    
 
 ## Scheduled Tasks
 
 To run the scheduled tasks locally, use the following command in your terminal:
 
-    ```bash
+    
     php artisan schedule:work
-    ```
+    
 
 ## Screenshots
 
